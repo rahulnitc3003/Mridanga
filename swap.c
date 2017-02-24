@@ -8,7 +8,3 @@ int main()
   printf("x = %d y = %d",x,y);
   return 0;
 }
-void swap(int x int y)
-{
-  // some lines of codes here
-}

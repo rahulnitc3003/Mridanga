@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/*------------Box Model-----------------*/
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+/*-------------Basic-------*/
+	body {
+		background: #202024;
+	}
+/*-------------Type------------*/
+	body, input, select, textarea {
+		color: rgba(255, 255, 255, 0.75);
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 14pt;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+	@media screen and (max-width: 1680px) {
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+		}
+	@media screen and (max-width: 1280px) {
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+		}
+	@media screen and (max-width: 980px) {
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+		}
+	@media screen and (max-width: 736px) {
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+		}
+	@media screen and (max-width: 480px) {
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+		}
+
+	a {
+		color: rgba(255, 255, 255, 0.75);
+		text-decoration: none;
+		border-bottom: 1px dotted;
+		outline: 0;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+
+/*------------------Box---------------*/
+
+	.thumbnails {
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.thumbnails .box {
+			margin: 0 1em 2em 1em;
+			width: 30%;
+		}
+	@media screen and (max-width: 1280px) {
+		.thumbnails .box {
+			width: 45%;
+		}
+	}
+	@media screen and (max-width: 736px) {
+		.thumbnails .box {
+			width: 100%;
+		}
+	}
+	.box {
+		border-radius: 4px;
+		margin-bottom: 2em;
+		background: #2c2c32;
+		text-align: center;
+	}
+	.box .inner {
+		padding: 1.5em;
+		width: 100% !important;
+	}
+			
+/*-------------Image---------------------*/
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+	.image.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+/*--------------Button--------------------*/
+
+	.button {
+		background-color: #70c7be;
+		border-radius: 10px;
+		border: 0;
+		color: #ffffff !important;
+		cursor: pointer;
+		font-weight: 400;
+		line-height: 2.95em;
+		text-align: center;
+	}
+/*--------------Banner--------------*/
+
+	#banner {
+		justify-content: center;
+		/*padding: 8em 4em 6em 4em;*/
+		min-height: 70vh;
+		background-image: url("../images/m.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top: 0;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	#banner .inner {
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+	#banner h1 {
+		color: #fff;
+		font-size: 3em;
+		font-weight: 400;
+		font-family: 'Passion One', arial;
+		margin: 0;
+	}
+	@media screen and (max-width: 980px) {
+
+				#banner h1 {
+					font-size: 3em;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#banner h1 {
+					font-size: 2em;
+				}
+
+			}
+	#banner:before {
+		transition-delay: 1s;
+		content: '';
+		background-color: #42424f;
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.45;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+/*---------Main--------*/
+	#main {
+		padding: 4em 0 2em 0;
+	}
+/*---------- Footer-----------------*/
+	#footer {
+		padding: 1em 0 1em 0em;
+		background-color: #1b1b1f;
+		text-align: center;
+	}
+
+		
+	#footer .copyright {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1em;
+	}
+	#footer .copyright a {
+				color: white;
+	}
+	#footer .copyright a:hover {
+				color:#060;
+	}
